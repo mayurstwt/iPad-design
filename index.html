@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Ipad</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Horizontal iPad Outline with YouTube Video</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+        .ipad {
+            width: 100%; /* Full width */
+            max-width: 700px; /* Maximum width for larger screens */
+            height: 450px; /* Fixed height */
+            border: 18px solid #000000; /* Outline color and thickness */
+            border-radius: 30px; /* Rounded corners */
+            position: relative;
+            background-color: #fff; /* Background color of the iPad */
+            margin: 0 auto; /* Center the iPad */
+        }
+        .screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px; /* Match the iPad's rounded corners */
+            background-color: #000000; /* Color of the screen */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden; /* Hide overflow */
+        }
+        .home-button {
+            width: 100px; /* Width of the home button */
+            height: 2px; /* Height of the home button */
+            background-color: #ffffff; /* Home button color */
+            position: absolute;
+            bottom: 4px; /* Position from the bottom */
+            left: 50%;
+            z-index: 99;
+            transform: translateX(-50%);
+            border-radius: 10px; /* Rounded home button */
+        }
+        iframe {
+            width: 100%; /* Full width of the screen */
+            height: 100%; /* Full height of the screen */
+            border: none; /* Remove border */
+        }
+</style>
+</head>
+<body>
+ 
+<div class="container d-flex justify-content-center align-items-center vh-100">
+<div class="ipad">
+<div class="screen">
+<iframe src="https://www.youtube.com/embed/iOUZXTC1lLs" allowfullscreen></iframe>
+</div>
+<div class="home-button"></div>
+</div>
+</div>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
